@@ -1,0 +1,23 @@
+<h2>Show project</h2>
+
+<ul>
+
+  <li>
+    <strong>User:</strong>
+    <%= @project.user_id %>
+  </li>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @project.name %>
+  </li>
+
+  <li>
+    <strong>Client key:</strong>
+    <%= @project.client_key %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: project_path(@conn, :edit, @project) %>
+<%= link "Back", to: project_path(@conn, :index) %>
